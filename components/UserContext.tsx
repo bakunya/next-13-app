@@ -7,11 +7,11 @@ import fetchJson from "@lib/fetchJson";
 import Link from "next/link";
 
 export default function UserContext() {
-  const { user, isValidating } = useUser();
+  const { user } = useUser();
   const { sessionUser, setSessionUser } = useContext(SessionContext);
   useEffect(() => {
     if (user) setSessionUser(user);
-  }, [user]);
+  }, [user, setSessionUser]);
 
   if (sessionUser)
     return (

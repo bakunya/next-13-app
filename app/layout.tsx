@@ -1,7 +1,7 @@
 // import { SessionProvider } from "./(home)/SessionProvider";
 // import SWRProvider from "./(home)/SWRProvider";
 // import UserContext from "./(home)/UserContext";
-import { cookies } from "next/headers";
+// import { cookies } from "next/headers";
 import { SessionProvider } from "components/SessionProvider";
 import SWRProvider from "components/SWRProvider";
 import UserContext from "components/UserContext";
@@ -13,8 +13,8 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   // Able to access to cookie
   // but no way to unseal the data
-  const v = cookies().get("aces/next/iron-session")?.value;
-  console.log(v?.length);
+  // const v = cookies().get("aces/next/iron-session")?.value;
+  // console.log(v?.length);
 
   return (
     <html lang="en">
