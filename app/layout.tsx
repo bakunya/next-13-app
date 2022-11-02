@@ -1,13 +1,18 @@
-import MetaLayout from "components/meta-layout";
 import { SessionProvider } from "./(home)/SessionProvider";
 import SWRProvider from "./(home)/SWRProvider";
 import UserContext from "./(home)/UserContext";
+import { cookies } from "next/headers";
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
 export default function RootLayout({ children }: LayoutProps) {
+  // Able to access to cookie
+  // but no way to unseal the data
+  const v = cookies().get("aces/next/iron-session")?.value;
+  console.log(v?.length);
+
   return (
     <html lang="en">
       <head>
@@ -20,7 +25,6 @@ export default function RootLayout({ children }: LayoutProps) {
           <SessionProvider>
             <UserContext />
             <hr />
-            {/* <MetaLayout leftContent={<div>LEFT</div>}>{children}</MetaLayout> */}
             {children}
           </SessionProvider>
         </SWRProvider>
