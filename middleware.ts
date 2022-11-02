@@ -8,13 +8,16 @@ export const middleware = async (req: NextRequest) => {
   const session = await getIronSession(req, res, sessionOptions);
 
   const { user } = session;
-  console.log("user", user)
+  if (user === undefined) console.log("No session user");
+  else console.log("Session", user);
+
+
   const shouldAuth = (req.nextUrl.pathname.startsWith("/dashboard")
   || req.nextUrl.pathname.startsWith("/clients")
   || req.nextUrl.pathname.startsWith("/settings")
   || req.nextUrl.pathname.startsWith("/billing"))
 
-  if (!user && (shouldAuth)) {
+  if (user === undefined && (shouldAuth)) {
     return NextResponse.redirect(new URL('/login', req.url))
   }
 
