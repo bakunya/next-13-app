@@ -1,3 +1,5 @@
+// This is the starter schema
+
 generator client {
   provider = "prisma-client-js"
 }
