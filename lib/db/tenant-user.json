@@ -1,29 +1,55 @@
-[
-  {
-    "_id": { "$oid": "635d5de790b0616df9617794" },
-    "tenantId": { "$oid": "635d540a90b0616df961777e" },
-    "userId": { "$oid": "635d56d490b0616df9617782" },
-    "isAdmin": true,
-    "status": "active",
-    "assignedAt": { "$date": "2022-10-29T16:29:52.101Z" },
-    "assignedBy": { "$oid": "635d56d490b0616df9617782" }
+[{
+  "_id": {
+    "$oid": "635d5de790b0616df9617794"
   },
-  {
-    "_id": { "$oid": "635d5f3690b0616df9617799" },
-    "tenantId": { "$oid": "635d54e790b0616df961777f" },
-    "userId": { "$oid": "635d56d490b0616df9617782" },
-    "isAdmin": false,
-    "status": "active",
-    "assignedAt": { "$date": "2022-10-29T16:29:53.101Z" },
-    "assignedBy": { "$oid": "635d56f490b0616df9617783" }
+  "tenantId": {
+    "$oid": "635d540a90b0616df961777e"
   },
-  {
-    "_id": { "$oid": "635d5f8090b0616df961779a" },
-    "tenantId": { "$oid": "635d54e790b0616df961777f" },
-    "userId": { "$oid": "635d56f490b0616df9617783" },
-    "isAdmin": true,
-    "status": "active",
-    "assignedAt": { "$date": "2022-10-29T16:29:54.101Z" },
-    "assignedBy": { "$oid": "635d56f490b0616df9617783" }
+  "userId": {
+    "$oid": "635d56d490b0616df9617782"
+  },
+  "isAdmin": true,
+  "status": "active",
+  "assignedAt": {
+    "$date": "2022-10-29T16:29:52.101Z"
+  },
+  "assignedBy": {
+    "$oid": "635d56d490b0616df9617782"
   }
-]
+},{
+  "_id": {
+    "$oid": "635d5f3690b0616df9617799"
+  },
+  "tenantId": {
+    "$oid": "635d54e790b0616df961777f"
+  },
+  "userId": {
+    "$oid": "635d56d490b0616df9617782"
+  },
+  "isAdmin": false,
+  "status": "active",
+  "assignedAt": {
+    "$date": "2022-10-29T16:29:53.101Z"
+  },
+  "assignedBy": {
+    "$oid": "635d56f490b0616df9617783"
+  }
+},{
+  "_id": {
+    "$oid": "635d5f8090b0616df961779a"
+  },
+  "tenantId": {
+    "$oid": "635d54e790b0616df961777f"
+  },
+  "userId": {
+    "$oid": "635d56f490b0616df9617783"
+  },
+  "isAdmin": true,
+  "status": "active",
+  "assignedAt": {
+    "$date": "2022-10-29T16:29:54.101Z"
+  },
+  "assignedBy": {
+    "$oid": "635d56f490b0616df9617783"
+  }
+}]

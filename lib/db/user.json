@@ -1,18 +1,27 @@
-[
-  {
-    "_id": { "$oid": "635d56d490b0616df9617782" },
-    "username": "muslax",
-    "fullname": "Arif Muslax",
-    "hash": "whyi9Pks",
-    "createdAt": { "$date": "2022-10-29T16:29:45.101Z" },
-    "updatedAt": { "$date": "2022-10-29T16:29:45.101Z" }
+[{
+  "_id": {
+    "$oid": "635d56d490b0616df9617782"
   },
-  {
-    "_id": { "$oid": "635d56f490b0616df9617783" },
-    "username": "lusi",
-    "fullname": "Lukas Sihotang",
-    "hash": "",
-    "createdAt": { "$date": "2022-10-29T16:29:55.101Z" },
-    "updatedAt": { "$date": "2022-10-29T16:29:55.101Z" }
+  "username": "muslax",
+  "fullname": "Arif Muslax",
+  "hash": "whyi9Pks",
+  "createdAt": {
+    "$date": "2022-10-29T16:29:45.101Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-29T16:29:45.101Z"
   }
-]
+},{
+  "_id": {
+    "$oid": "635d56f490b0616df9617783"
+  },
+  "username": "lusi",
+  "fullname": "Lukas Sihotang",
+  "hash": "whyi9Pks",
+  "createdAt": {
+    "$date": "2022-10-29T16:29:55.101Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-29T16:29:55.101Z"
+  }
+}]
