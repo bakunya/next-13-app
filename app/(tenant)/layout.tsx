@@ -1,15 +1,31 @@
-import AuthRedirect from "components/auth-redirect";
+"use client";
+
+import SessionContext from "app/(home)/SessionProvider";
 import MetaLayout from "components/meta-layout";
+import { useContext, useEffect } from "react";
 import Navbar from "./Navbar";
+import NavbarNoAuth from "../(home)/Navbar";
 
 type LayoutProps = {
   children: React.ReactNode;
 };
 
 export default function Layout({ children }: LayoutProps) {
+  const { sessionUser } = useContext(SessionContext);
+  useEffect(() => {
+    if (!sessionUser) window.location.href = "/login";
+  }, [sessionUser]);
+
+  if (!sessionUser)
+    return (
+      <MetaLayout leftContent={<NavbarNoAuth />}>
+        <></>
+      </MetaLayout>
+    );
+
   return (
     <>
-      <AuthRedirect />
+      {/* <AuthRedirect /> */}
       <MetaLayout leftContent={<Navbar />}>{children}</MetaLayout>
     </>
   );
