@@ -1,7 +1,10 @@
-import { SessionProvider } from "./(home)/SessionProvider";
-import SWRProvider from "./(home)/SWRProvider";
-import UserContext from "./(home)/UserContext";
+// import { SessionProvider } from "./(home)/SessionProvider";
+// import SWRProvider from "./(home)/SWRProvider";
+// import UserContext from "./(home)/UserContext";
 import { cookies } from "next/headers";
+import { SessionProvider } from "components/SessionProvider";
+import SWRProvider from "components/SWRProvider";
+import UserContext from "components/UserContext";
 
 type LayoutProps = {
   children: React.ReactNode;

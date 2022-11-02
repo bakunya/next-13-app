@@ -1,6 +1,6 @@
 "use client";
 
-import SessionContext from "app/(home)/SessionProvider";
+import SessionContext from "components/SessionProvider";
 import MetaLayout from "components/meta-layout";
 import { useContext, useEffect } from "react";
 import Navbar from "./Navbar";

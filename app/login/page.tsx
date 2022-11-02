@@ -4,7 +4,7 @@ import Link from "next/link";
 import LoginForm from "./form";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect } from "react";
-import SessionContext from "app/(home)/SessionProvider";
+import SessionContext from "components/SessionProvider";
 
 export default function LoginPage() {
   const router = useRouter();

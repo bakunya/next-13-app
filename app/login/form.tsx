@@ -3,8 +3,8 @@
 import { FormEvent, useContext, useState } from "react";
 import { useRouter } from "next/navigation";
 import fetchJson, { FetchError } from "lib/fetchJson";
-import SessionContext from "app/(home)/SessionProvider";
 import { SessionUser } from "@api/user";
+import SessionContext from "components/SessionProvider";
 
 export default function LoginForm() {
   const router = useRouter();

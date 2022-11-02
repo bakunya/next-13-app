@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useContext } from "react";
-import SessionContext from "./SessionProvider";
+import SessionContext from "../../components/SessionProvider";
 // import styles from "./navbar.module.css";
 import "./navbar.css";
 
