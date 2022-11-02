@@ -1,0 +1,21 @@
+ul {
+    margin: 0;
+    padding: 0.5rem 0 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+a {
+    color: blue;
+}
+
+a.auth {
+    color: magenta;
+}
+
+a.login {
+    color: orange;
+}
