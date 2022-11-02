@@ -1,0 +1,16 @@
+[
+  {
+    "_id": { "$oid": "635e0e6e90b0616df96177a7" },
+    "tenantId": { "$oid": "635d540a90b0616df961777e" },
+    "orgName": "PT Sembako Multi Kola",
+    "createdAt": { "$date": "2022-10-29T16:29:47.101Z" },
+    "updatedAt": { "$date": "2022-10-29T16:29:47.101Z" }
+  },
+  {
+    "_id": { "$oid": "635e0f3090b0616df96177ad" },
+    "tenantId": { "$oid": "635d54e790b0616df961777f" },
+    "orgName": "Departemen Hukum Pidana, RI",
+    "createdAt": { "$date": "2022-10-29T16:29:48.101Z" },
+    "updatedAt": { "$date": "2022-10-29T16:29:48.101Z" }
+  }
+]

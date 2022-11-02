@@ -1,0 +1,18 @@
+[
+  {
+    "_id": { "$oid": "635d540a90b0616df961777e" },
+    "type": "basic",
+    "name": "PT Lisensi Abadi Yola",
+    "expiryDate": { "$date": "2023-10-29T16:28:35.101Z" },
+    "createdAt": { "$date": "2022-10-29T16:28:35.101Z" },
+    "updatedAt": { "$date": "2022-10-29T16:28:35.101Z" }
+  },
+  {
+    "_id": { "$oid": "635d54e790b0616df961777f" },
+    "type": "pro",
+    "name": "PT Luber Tadi Sentosa",
+    "expiryDate": { "$date": "2023-10-29T16:30:17.537Z" },
+    "createdAt": { "$date": "2022-10-29T16:29:35.101Z" },
+    "updatedAt": { "$date": "2022-10-29T16:29:35.101Z" }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "_id": { "$oid": "635e106890b0616df96177b1" },
+    "tenantId": { "$oid": "635d540a90b0616df961777e" },
+    "clientId": { "$oid": "635e0e6e90b0616df96177a7" },
+    "adminId": { "$oid": "635d56d490b0616df9617782" },
+    "title": "Pengukuran Manfaat",
+    "createdAt": { "$date": "2022-10-29T16:29:51.101Z" },
+    "updatedAt": { "$date": "2022-10-29T16:29:51.101Z" }
+  },
+  {
+    "_id": { "$oid": "635e10ab90b0616df96177b2" },
+    "tenantId": { "$oid": "635d540a90b0616df961777e" },
+    "clientId": { "$oid": "635e0f3090b0616df96177ad" },
+    "adminId": { "$oid": "635d56d490b0616df9617782" },
+    "title": "Pengukuran Bertingkat",
+    "createdAt": { "$date": "2022-10-29T16:29:52.101Z" },
+    "updatedAt": { "$date": "2022-10-29T16:29:52.101Z" }
+  }
+]
