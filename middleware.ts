@@ -9,15 +9,28 @@ export const middleware = async (req: NextRequest) => {
 
   const { user } = session;
   if (user === undefined) console.log("No session user");
-  else console.log("Session", user);
+  else console.log("Session", user.fullname);
 
 
-  const shouldAuth = (req.nextUrl.pathname.startsWith("/dashboard")
-  || req.nextUrl.pathname.startsWith("/clients")
-  || req.nextUrl.pathname.startsWith("/settings")
-  || req.nextUrl.pathname.startsWith("/billing"))
+  // const shouldAuth = (req.nextUrl.pathname.startsWith("/dashboard")
+  // || req.nextUrl.pathname.startsWith("/clients")
+  // || req.nextUrl.pathname.startsWith("/settings")
+  // || req.nextUrl.pathname.startsWith("/billing"))
 
-  if (user === undefined && (shouldAuth)) {
+  // if (user === undefined && (shouldAuth)) {
+  //   return NextResponse.redirect(new URL('/login', req.url))
+  // }
+
+  if (user == undefined && req.nextUrl.pathname.startsWith("/dashboard")) {
+    return NextResponse.redirect(new URL('/login', req.url))
+  }
+  if (user == undefined && req.nextUrl.pathname.startsWith("/clients")) {
+    return NextResponse.redirect(new URL('/login', req.url))
+  }
+  if (user == undefined && req.nextUrl.pathname.startsWith("/settings")) {
+    return NextResponse.redirect(new URL('/login', req.url))
+  }
+  if (user == undefined && req.nextUrl.pathname.startsWith("/billing")) {
     return NextResponse.redirect(new URL('/login', req.url))
   }
 
@@ -29,7 +42,7 @@ export const middleware = async (req: NextRequest) => {
 };
 
 // Can be omitted
-export const config = {
-  // matcher: ["/login", "/dashboard"],
-  matcher: ['/login', '/dashboard', '/clients', '/settings', '/billing'],
-};
+// export const config = {
+//   // matcher: ["/login", "/dashboard"],
+//   matcher: ['/login', '/dashboard', '/clients', '/settings', '/billing'],
+// };
