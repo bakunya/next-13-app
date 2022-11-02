@@ -32,7 +32,7 @@ export default function UserContext() {
       </div>
     );
 
-  if (isValidating) return <div>Checking user...</div>;
+  // if (isValidating) return <div>Checking user...</div>;
 
   return (
     <div>
